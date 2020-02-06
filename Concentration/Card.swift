@@ -1,8 +1,7 @@
 //
 //  Card.swift
-//  Concentration
 //
-//  Created by Nikita Kalyuzhniy on 2/5/20.
+//  Created by Nikita Kalyuzhniy on 2/4/20.
 //  Copyright © 2020 Nikita Kalyuzhniy. All rights reserved.
 //
 
@@ -15,9 +14,9 @@ struct Card {
     var isMatched = false
     var identifier: Int
     
-    static var identifierFactory = 0
+    private static var identifierFactory = 0
     
-    static func getUniqueIdentifier() -> Int {
+    private static func getUniqueIdentifier() -> Int {
         identifierFactory += 1
         return identifierFactory
     }
